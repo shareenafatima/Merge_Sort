@@ -29,7 +29,9 @@ def merge_sort(array)
      output
   end
   
-  unsort_array = [3,8,1,19,7,34,80,54,44,6,78,100,63,98]
+  puts "enter numbers seperated by space:"
+input = gets.chomp
+unsort_array = input.split.map(&:to_i)
   sort_array = merge_sort(unsort_array)
   puts "sorted array: #{sort_array}"
   
